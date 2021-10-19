@@ -110,6 +110,9 @@ List hugeglasso(Eigen::Map<Eigen::MatrixXd> S, NumericVector lambda, bool scr, b
         path.push_back(*(tmp_path_p[nlambda-1-i]));
         icov.push_back(*(tmp_icov_p[nlambda-1-i]));
         if(cov_output) cov.push_back(*(tmp_cov_p[nlambda-1-i]));
+        delete(tmp_path_p[nlambda-1-i]);
+        delete(tmp_icov_p[nlambda-1-i]);
+        delete(tmp_cov_p[nlambda-1-i]);
     }
     result["path"] = path;
     result["icov"] = icov;
