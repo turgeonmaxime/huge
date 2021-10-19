@@ -6,7 +6,7 @@
 \alias{_PACKAGE}
 \title{High-Dimensional Undirected Graph Estimation}
 \description{
-A package for high-dimensional undirected graph estimation. Memory leak has been removed
+A package for high-dimensional undirected graph estimation
 }
 \details{
 \tabular{ll}{
