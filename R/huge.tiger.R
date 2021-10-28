@@ -28,7 +28,7 @@ huge.tiger = function(x, lambda = NULL, nlambda = NULL, lambda.min.ratio = NULL,
 	}
 	if(!fit$cov.input)
 	{
-		x = scale(x)
+		x = scale(x, scale = FALSE)
 		S = cor(x)
 	}
 
